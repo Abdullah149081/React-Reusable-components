@@ -2,12 +2,9 @@
 /* eslint-disable react/button-has-type */
 import { ButtonHTMLAttributes, forwardRef } from 'react';
 
+import { TVariant } from '../../types/TVariant';
 import cn from '../../utils/cn';
 import getVariant from '../../utils/getVariant';
-
-type TVariant = {
-  variant?: 'primary' | 'secondary' | 'purple';
-};
 
 type TButtonProps = {
   type: 'button' | 'submit' | 'reset';
@@ -30,10 +27,6 @@ const Button = forwardRef<HTMLButtonElement, TButtonProps>(
     );
   }
 );
-
-Button.defaultProps = {
-  variant: 'purple',
-};
 
 Button.displayName = 'Button';
 

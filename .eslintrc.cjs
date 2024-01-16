@@ -22,6 +22,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'react', 'jsx-a11y', 'prettier'],
   rules: {
+    'react/function-component-definition': 0,
     'react/jsx-filename-extension': ['error', { extensions: ['.tsx'] }],
     'react/react-in-jsx-scope': 0,
     'react/prop-types': ['off', {}],
