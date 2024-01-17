@@ -4,7 +4,7 @@ import { classInput, classLabel } from '../../style/form';
 import cn from '../../utils/cn';
 import { SignUpSchema, TFormValues } from './formValidation';
 
-const Form = () => {
+const NormalForm = () => {
   const {
     register,
     handleSubmit,
@@ -90,4 +90,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default NormalForm;
